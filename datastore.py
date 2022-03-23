@@ -10,8 +10,7 @@ def list_files(startpath):
         for f in files:
             print('{}{}'.format(subindent, f))
             
-if __name__ == '__main__':
-  parser = argparse.ArgumentParser(description='Process some integers.')
-  parser.add_argument('--data_dir', type=str)
-  args = parser.parse_args()
-  list_files(args.data_dir)
+parser = argparse.ArgumentParser(description='Process some integers.')
+parser.add_argument('--data_dir', type=str)
+args = parser.parse_args()
+list_files(args.data_dir)
