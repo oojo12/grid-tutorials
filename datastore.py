@@ -1,6 +1,8 @@
 import os
+import time
 import argparse
 
+time.sleep(60)
 def list_files(startpath):
     for root, dirs, files in os.walk(startpath):
         level = root.replace(startpath, '').count(os.sep)
