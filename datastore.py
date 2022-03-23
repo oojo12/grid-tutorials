@@ -12,6 +12,6 @@ def list_files(startpath):
             
 if __name__ == '__main__':
   parser = argparse.ArgumentParser(description='Process some integers.')
-  parser.add_argument('startpath', type=str)
+  parser.add_argument('--data_dir', type=str)
   args = parser.parse_args()
-  list_files(args.startpath)
+  list_files(args.data_dir)
